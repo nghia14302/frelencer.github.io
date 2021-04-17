@@ -86,6 +86,26 @@ iframe {
 .nav-scroll .nav-link {
   color: #000000;
 }
+.nav-scroll .nav-link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: black;
+  height: 1px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.nav-scroll .nav-link:hover:after,
+.nav-scroll .nav-link:focus:after,
+.nav-scroll .nav-link:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
 .menu-container {
   display: flex;
   flex-basis: auto;
@@ -102,19 +122,61 @@ iframe {
 .menu-item {
   margin-left: 35px;
 }
+
 .nav-link {
   text-decoration: none;
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+  display: inline;
+  position: relative;
+  overflow: hidden;
 }
-.menu-item:hover {
-  text-decoration: underline;
-  text-underline-position: under;
+.nav-link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: white;
+  height: 1px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
-.active {
-  text-decoration: underline;
-  text-underline-position: under;
-  transition: all .3s ease-in-out;
+.nav-link:hover:after,
+.nav-link:focus:after,
+.nav-link:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.active .nav-link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -5px;
+  background: white;
+  height: 1px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  left: 0;
+    right: auto;
+    width: 100%; 
+}
+.nav-scroll .active .nav-link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -5px;
+  background: black;
+  height: 1px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  left: 0;
+  right: auto;
+  width: 100%; 
 }
 section:nth-child(even) {
   background: #fafafa;
