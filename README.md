@@ -1,5 +1,5 @@
 # Fcode-LOL
-This is a Landing Page based on http://john.wethemez.com/Home-frelencer. 
+This is a Landing Page based on http://john.wethemez.com/Home-frelencer./n
 About us:
   - We've leaned html, css and js for 3 month by making this page. We shared sections together and finished it.
   - Our Team:
@@ -7,5 +7,5 @@ About us:
     + Cao Nguyễn Hoàng Hiệp
     + Huỳnh Hoàng Huy
     + Trần Nhật Hoàng
-    + Đào Thiên Bình
+    + Đào Thiên Bình/n
 Thank you for visiting our page and hope you leave a comment. :>
