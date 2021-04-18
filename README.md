@@ -2,7 +2,7 @@
 This is a Landing Page based on http://john.wethemez.com/Home-frelencer.
 
 About us:
-  - We've leaned html, css and js for 3 month by making this page. We shared sections together and finished it.
+  - We've leaned html, css and js by making this page. We shared sections together and finished it.
   - Our Team:
     + Nguyễn Trọng Nghĩa
     + Cao Nguyễn Hoàng Hiệp
