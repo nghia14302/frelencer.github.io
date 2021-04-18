@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 /* for smooth scrolling */
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;
@@ -86,22 +86,11 @@ iframe {
 .nav-scroll .nav-link {
   color: #000000;
 }
-.nav-scroll .nav-link:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  width: 0;
-  bottom: -5px;
+.navbar.nav-scroll .nav-link:after {
   background: black;
-  height: 1px;
-  transition-property: width;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
 }
-.nav-scroll .nav-link:hover:after,
-.nav-scroll .nav-link:focus:after,
-.nav-scroll .nav-link:active:after {
+.navbar.nav-scroll .nav-link:hover:after,
+.navbar.nav-scroll .active .nav-link:after {
   left: 0;
   right: auto;
   width: 100%;
@@ -122,61 +111,30 @@ iframe {
 .menu-item {
   margin-left: 35px;
 }
-
 .nav-link {
   text-decoration: none;
   display: inline;
   position: relative;
   overflow: hidden;
 }
-.nav-link:after {
-  content: "";
+.navbar .nav-link:after {
+  content: "";  
   position: absolute;
   z-index: -1;
+  bottom: -5px;
   right: 0;
   width: 0;
-  bottom: -5px;
   background: white;
   height: 1px;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
-.nav-link:hover:after,
-.nav-link:focus:after,
-.nav-link:active:after {
+.navbar .nav-link:hover:after,
+.active .nav-link:after {
   left: 0;
   right: auto;
   width: 100%;
-}
-
-.active .nav-link:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: -5px;
-  background: white;
-  height: 1px;
-  transition-property: width;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-  left: 0;
-    right: auto;
-    width: 100%; 
-}
-.nav-scroll .active .nav-link:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: -5px;
-  background: black;
-  height: 1px;
-  transition-property: width;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-  left: 0;
-  right: auto;
-  width: 100%; 
 }
 section:nth-child(even) {
   background: #fafafa;
