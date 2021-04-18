@@ -12,14 +12,12 @@ function addBlogBox() {
 }
 function renderImageBlog(index) {
     let image = document.createElement("img");
-
     image.src = "../../../assets/images/blog" + (index + 1) + ".jpg";
     image.alt = "blog " + index + " image";
     return image;
 }
 function renderCreateDate(index) {
     let createDate = document.createElement("div");
-
     createDate.className = "create-date";
     createDate.innerHTML = BLOG_BOX_ITEMS[index].createDate;
     return createDate;
@@ -27,22 +25,19 @@ function renderCreateDate(index) {
 function renderTag() {
     let tag = document.createElement("span");
     let tagIcon = document.createElement("i");
-    let tagContentNode = document.createTextNode(" BY: Tanism |");
 
     tagIcon.className = "fa fa-tag";
-    tagIcon.appendChild(tagContentNode);
+    tagIcon.appendChild(document.createTextNode(" BY: Tanism |"));
     tag.appendChild(tagIcon);
     return tag;
 }
 function renderComment() {
     let comment = document.createElement("span");
-    let spaceNode = document.createTextNode(" ");
     let commentIcon = document.createElement("i");
-    let commentContentNode = document.createTextNode(" 0 comment");
 
-    comment.appendChild(spaceNode);
+    comment.appendChild(document.createTextNode(" "));
     commentIcon.className = "fa fa-comments";
-    commentIcon.appendChild(commentContentNode);
+    commentIcon.appendChild(document.createTextNode(" 0 comment"));
     comment.appendChild(commentIcon);
     return comment;
 }
@@ -51,8 +46,7 @@ function renderLink(id) {
 
     link.href = BLOG_BOX_ITEMS[id].link;
     linkContent = document.createElement("h2");
-    linkContentNode = document.createTextNode(BLOG_BOX_ITEMS[id].title);
-    linkContent.appendChild(linkContentNode);
+    linkContent.appendChild(document.createTextNode(BLOG_BOX_ITEMS[id].title));
     link.appendChild(linkContent);
     return link;
 }
@@ -69,18 +63,14 @@ function renderInfo(id) {
 }
 function renderPostContent(id) {
     let postContent = document.createElement("div");
-    let tag = renderTag();
-    let comment = renderComment();
-    let link = renderLink(id);
     let paragraph = document.createElement("p");
-    let info = renderInfo(id);
     
     postContent.className = "post-content";
-    postContent.appendChild(tag);
-    postContent.appendChild(comment);
-    postContent.appendChild(link);
+    postContent.appendChild(renderTag());
+    postContent.appendChild(renderComment());
+    postContent.appendChild(renderLink(id));
     paragraph.appendChild(document.createTextNode(BLOG_BOX_ITEMS[id].content));
     postContent.appendChild(paragraph);
-    postContent.appendChild(info);
+    postContent.appendChild(renderInfo(id));
     return postContent;
 }

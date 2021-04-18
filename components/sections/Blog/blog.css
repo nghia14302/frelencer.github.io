@@ -1,108 +1,111 @@
 .blog-container {
-  line-height: 30px;
-  color: #797979; /*grey*/
-}
-.blog-title {
-  	text-align: center;
-}
-.blog-title h2 {
-	font-weight: bolder;
-	color: black;
-	text-transform: capitalize;
-	letter-spacing: -2px;
-	margin-top: 0em;
-	margin-bottom: 1.5em;
-	font-family: "Open Sans", sans-serif;
-}
-.blog-title h6 {
-	font-size: 14px;
-	font-weight: bold;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	color: #0db3c7; /*powder blue*/
-	font-weight: 600;
-	margin-bottom: 1em;
-	font-family: "Open Sans", sans-serif;
-}
-.blog-box {
-	position: relative;
-	float: left;
-	left: 50%;
-	transform: translateX(-102%);
-	margin-right: 2rem;
-}
-.blog-box img {
-	height: 50%;
-	width: auto;
-}
-.create-date {
-	position: absolute;
-	width: 55px;
-	height: 60px;
-	font: 700 18px sans-serif;
-	color: #494949; /*grey*/
-	background: rgba(255, 255, 255, 0.9); /*white*/
-	text-align: center;
-	top: 5%;
-	right: 5%;
-	padding-top: 8px;
-	-webkit-transition: all 0.4s linear;
-	-o-transition: all 0.4s linear;
-	transition: all 0.4s linear;
-}
-.blog-box:hover .create-date {
-	background-color: rgb(7, 10, 56); /*dark blue*/
-	color: rgb(255, 255, 255); /*white*/
-}
-.post-content {
-	position: absolute;
-	max-width: 100%;
-	margin: -3.125rem 1.5625rem 0rem;
-	padding: 1.875rem 2.5rem;
-	background-color: #ffff; /*white*/
-	transition: all 0.2s linear;
-}
-.post-content span {
-	font: 500 15px/15px "Montserrat", sans-serif;
-	color: #494949; /*grey*/
-}
-.post-content h2 {
-	letter-spacing: 0.01em;
-	font-size: 22px;
-	line-height: 28px;
-	font-weight: 600;
-	color: #494949; /*grey*/
-	padding: 0.5em 0 0.4em;
-	margin-bottom: 0.5rem;
-	margin-top: 0;
-	transition: all 0.2s linear;
-	font-family: "Open Sans", sans-serif;
-}
-.post-content p {
-  	color: #677294; /*blue*/
-}
-.post-content a {
-	font-size: 14px;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 600;
+	line-height: 30px;
 	color: #797979; /*grey*/
-	-webkit-transition: color 0.3s linear;
-	-o-transition: color 0.3s linear;
-	transition: color 0.3s linear;
-}
-.blog-box:hover .post-content {
-  	box-shadow: 0px 5px 10px gainsboro;
-}
-.post-content a h2:hover {
-  	color: #0db3c7; /*powder blue*/
-}
-.post-content a:hover {
-  	color: #0db3c7 /*powder blue*/;
-}
-.post-content i {
-  	transform: translateX(2px);
-}
-.post-content a:hover i {
-  	transform: translateX(10px);
-  	transition-duration: 0.5s;
-}
+  }
+  .blog-title {
+		text-align: center;
+  }
+  .blog-title h2 {
+	  font-weight: bolder;
+	  color: black;
+	  text-transform: capitalize;
+	  letter-spacing: -2px;
+	  margin-top: 0em;
+	  margin-bottom: 1.5em;
+	  font-family: "Open Sans", sans-serif;
+  }
+  .blog-title h6 {
+	  font-size: 14px;
+	  font-weight: bold;
+	  letter-spacing: 3px;
+	  text-transform: uppercase;
+	  color: #0db3c7; /*powder blue*/
+	  font-weight: 600;
+	  margin-bottom: 1em;
+	  font-family: "Open Sans", sans-serif;
+  }
+  .blog-box {
+	  position: relative;
+	  float: left;
+	  left: 50%;
+	  transform: translateX(-102%);
+	  margin-right: 2rem;
+	  width: 30vw;
+  }
+  .blog-box img {
+	  height: 45%;
+	  width: auto;
+	  width: 30vw;
+  }
+  .create-date {
+	  position: absolute;
+	  width: 55px;
+	  height: 60px;
+	  font: 700 18px sans-serif;
+	  color: #494949; /*grey*/
+	  background: rgba(255, 255, 255, 0.9); /*white*/
+	  text-align: center;
+	  top: 5%;
+	  right: 5%;
+	  padding-top: 0.5rem;
+	  -webkit-transition: all 0.4s linear;
+	  -o-transition: all 0.4s linear;
+	  transition: all 0.4s linear;
+  }
+  .blog-box:hover .create-date {
+	  background-color: rgb(7, 10, 56); /*dark blue*/
+	  color: rgb(255, 255, 255); /*white*/
+  }
+  .post-content {
+	  position: absolute;
+	  max-width: 100%;
+	  margin: -3.125rem 1.5625rem 0rem;
+	  padding: 1.875rem 2.5rem;
+	  background-color: #ffff; /*white*/
+	  transition: all 0.2s linear;
+  }
+  .post-content span {
+	  font: 500 15px/15px "Montserrat", sans-serif;
+	  color: #494949; /*grey*/
+  }
+  .post-content h2 {
+	  letter-spacing: 0.01em;
+	  font-size: 22px;
+	  line-height: 28px;
+	  font-weight: 600;
+	  color: #494949; /*grey*/
+	  padding: 0.5em 0 0.4em;
+	  margin-bottom: 0.5rem;
+	  margin-top: 0;
+	  transition: all 0.2s linear;
+	  font-family: "Open Sans", sans-serif;
+  }
+  .post-content p {
+		color: #677294; /*blue*/
+  }
+  .post-content a {
+	  font-size: 14px;
+	  font-family: "Montserrat", sans-serif;
+	  font-weight: 600;
+	  color: #797979; /*grey*/
+	  -webkit-transition: color 0.3s linear;
+	  -o-transition: color 0.3s linear;
+	  transition: color 0.3s linear;
+  }
+  .blog-box:hover .post-content {
+		box-shadow: 0px 5px 10px gainsboro;
+  }
+  .post-content a h2:hover {
+		color: #0db3c7; /*powder blue*/
+  }
+  .post-content a:hover {
+		color: #0db3c7 /*powder blue*/;
+  }
+  .post-content i {
+		transform: translateX(2px);
+  }
+  .post-content a:hover i {
+		transform: translateX(10px);
+		transition-duration: 0.5s;
+  }
+  
