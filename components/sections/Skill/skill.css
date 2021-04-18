@@ -1,7 +1,9 @@
 .skill {
     display: flex;
-    padding: 3rem 9rem;
     background-color: #fafafa; /*color: White*/
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .content_left_of_skill {
     margin: 0;
@@ -64,59 +66,4 @@
 }
 .content_right_of_skill img {
     width: 30vw;
-}
-@media screen and (max-width: 1200px) {
-    .skill {
-        padding: 8rem 5rem;
-    }
-    .content_left_of_skill {
-        width: 54%;
-        padding: 1.5rem;
-    }
-    .content_right_of_skill img {
-        width: 30rem;
-        width: 500px;
-    }
-    }
-    @media screen and (max-width: 950px) {
-    .skill {
-        display: inline-block;
-        padding: 1rem;
-    }
-    .content_left_of_skill {
-        width: 90%;
-        padding: 1.5rem;
-        margin: auto;
-    }
-    .content_right_of_skill img {
-        width: 90vw;
-    }
-    }
-    @media screen and (max-width: 750px) {
-    .skill {
-        display: inline-block;
-        padding: 0rem;
-    }
-    .content_left_of_skill {
-        width: 90%;
-        padding: 1rem;
-        margin: 1rem;
-    }
-    .content_right_of_skill img {
-        width: 100vw;
-        padding: 1rem;
-    }
-    }
-    @media screen and (max-width: 560px) {
-    .content_left_of_skill {
-        width: 90%;
-        padding: 1rem;
-        margin: 1rem;
-    }
-    .box div {
-        width: 100%;
-        border: none;
-        padding: 1rem;
-        text-align: center;
-    }
 }
